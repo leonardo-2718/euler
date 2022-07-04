@@ -1,0 +1,81 @@
+/* caratteristiche generali */
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("background.jpg");
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+.contenitore{
+  background-color: rgba(0,0,0,0.5);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border-radius: 2%;
+}
+main{
+  color: white;
+}
+
+/* caratteristiche di logo */
+.logo_lim{
+  margin-top: 10%;
+  width: 20%;
+  height: 20%;
+}
+
+/* caratteristiche del titolo e della barra dei pulsanti di selezione */
+header, nav{
+  text-align: center;
+}
+nav{
+  background-color: rgb(0,240,0);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+.titolo{
+  color: rgb(0,240,0);
+}
+
+/* caratteristiche delle posizione dei monopattini */
+section{
+  margin-left: 5%;
+  margin-top: 2%;
+}
+section > h3{
+  display: inline-block;
+}
+main section:last-child{
+  padding-bottom: 5%;
+}
+.posizione_monopattino::before{
+  content: "\2192";
+}
+.posizione_monopattino{
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+/* livello di carica dei monopattini */
+.carica{
+  height: 20px;
+  border-radius: 5px;
+}
+.carica.bassa{
+  background-color: red;
+  width: 100px;
+}
+.carica.media{
+  background-color: orange;
+  width: 300px;
+}
+.carica.alta{
+  background-color: rgb(0,240,0);
+  width: 600px;
+}
